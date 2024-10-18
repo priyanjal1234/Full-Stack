@@ -8,7 +8,7 @@ function App() {
   const [data, setdata] = useState('')
   useEffect(() => {
     async function fetch() {
-      let res = await axios.get("http://localhost:3000",{withCredentials: true})
+      let res = await axios.get("https://full-stack-backend-28wx.onrender.com",{withCredentials: true})
       setdata(res.data)
     }
     fetch()
